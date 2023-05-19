@@ -1,0 +1,32 @@
+{
+  "name": "MexText",
+  "description": "Capture your text.",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+      "default_popup": "./Popup.html"
+  },
+  "icons": {
+    "16": "/assets/mextextlogo.png",
+    "48": "/assets/mextextlogo.png",
+    "128": "/assets/mextextlogo.png"
+  },
+  "content_scripts": [  
+      {
+          "matches": [
+              "<all_urls>"
+          ],
+          "js": [
+              "./scripts/contentScript.js"
+          ]
+      }
+  ],
+  "permissions": [
+      "tabs",
+      "storage",
+      "activeTab"
+  ],
+  "host_permissions": [
+      "<all_urls>"
+  ]
+}

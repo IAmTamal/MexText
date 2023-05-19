@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+#mainCont {
+  min-width: 400px;
+  width: max-content;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+#mainCont > h1 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#picker_btn {
+  padding: 5px 7px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0px 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  max-width: 200px;
+}
+
+#picker_btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.errorLabel {
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+#ClearButton {
+  padding: 5px 7px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0px 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+#ClearButton:hover {
+  background-color: white;
+  color: black;
+}
+
+.textblock {
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  max-width: 400px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.textblock > p {
+  margin: 0;
+}
+
+/* Add css based on the content of the span */
+
+.label {
+  font-weight: 600;
+}
+
+.clickable-url {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.showdiv,
+.textblock_btndiv {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.showdiv > button {
+  padding: 5px 7px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0px 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  max-width: 250px;
+  margin-top: 10px;
+}
+
+.textblock_btndiv > button {
+  padding: 5px 7px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0px 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  max-width: 200px;
+  margin-top: 10px;
+}
