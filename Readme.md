@@ -4,11 +4,6 @@ MexText is a browser extension which allows you to capture any text element from
 
 <br/>
 
-
-<br>
-
-
-
 ## Tech Stack 💻
 
 <p >
@@ -17,9 +12,15 @@ MexText is a browser extension which allows you to capture any text element from
     <img alt="C" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 </p>
 
+<br/>
 
 ## How to use ? 📖
 
+**CLICK ON THE IMAGE BELOW 👇🏻👇🏻**
+
+[![Watch the video](https://img.youtube.com/vi/OmahKQ2GcIM/hqdefault.jpg)](https://youtu.be/OmahKQ2GcIM)
+
+<br/>
 
 ## Architecture 📐
 
@@ -32,6 +33,8 @@ The MexText Chrome Extension is built using HTML, CSS, and JavaScript. The codeb
 - `contentScript.js`: The `contentScript.js` file is injected into web pages and runs in the context of the currently active tab. It captures user interactions with the web page, such as hovering over elements and clicking, to extract content from the selected element. It communicates with the `popup.js` script using the Chrome Extension Messaging API.
 
 - `newpage.html` and `newpage.js`: The `newpage.html` file represents a specific web page where the extension provides additional functionalities. The `newpage.js` file contains the JavaScript code that handles the logic and interactions specific to this page. It listens for button clicks and triggers actions based on the user's selection.
+
+<br/>
 
 ## Under the hood 🧐
 
