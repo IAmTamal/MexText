@@ -19,6 +19,16 @@ window.addEventListener("DOMContentLoaded", () => {
                 const textblock = document.createElement("div");
                 textblock.classList.add("textblock");
 
+                textblock.addEventListener("click", () => {
+                    navigator.clipboard.writeText(item.content)
+                        .then(() => {
+                            console.log("Content copied to clipboard:", item.content);
+                        })
+                        .catch(error => {
+                            console.error("Failed to copy content to clipboard:", error);
+                        });
+                });
+
                 const contentLabel = document.createElement("span");
                 contentLabel.classList.add("label");
                 contentLabel.innerText = "Content: ";
@@ -149,7 +159,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
         const clearButton = document.getElementById("ClearButton");
         clearButton.addEventListener("click", () => {
-            localStorage.removeItem("capturedData");
+            localStorage.clear();
             resultList.innerHTML = ""; // Clear the content displayed in the resultList
 
             chrome.tabs.query({ active: true, currentWindow: true }, tabs => {

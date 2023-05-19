@@ -101,7 +101,7 @@ async function generateText(prompt, content) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: "Bearer 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", // Replace with your OpenAI API key
+                Authorization: "Bearer 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", // Replace with your OpenAI API key
             },
             body: JSON.stringify({
                 model: "gpt-3.5-turbo",
